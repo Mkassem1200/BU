@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  monitor:
+    build: .
+    container_name: dubai-cares-monitor
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data        # Persists logs and alert state across restarts
+      - ./config.yaml:/app/config.yaml  # Live-reload config without rebuild
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    environment:
+      - TZ=Asia/Dubai            # Use Dubai timezone for logs

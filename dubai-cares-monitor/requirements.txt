@@ -1,0 +1,6 @@
+requests==2.32.3
+schedule==1.2.2
+PyYAML==6.0.2
+python-dotenv==1.0.1
+urllib3==2.2.3
+certifi==2024.12.14

@@ -1,0 +1,59 @@
+# Dubai Cares Website Monitoring Configuration
+
+monitoring:
+  interval_minutes: 60       # Check every 60 minutes
+  timeout_seconds: 10        # Request timeout per site
+  retry_attempts: 3          # Number of retries before marking as down
+  retry_delay_seconds: 5     # Delay between retries
+
+websites:
+  - name: "Dubai Cares Main Website"
+    url: "https://www.dubaicares.ae"
+    expected_status: 200
+    check_ssl: true
+
+  - name: "Dubai Cares Donations"
+    url: "https://donate.dubaicares.ae"
+    expected_status: 200
+    check_ssl: true
+
+  - name: "Dubai Cares Portal"
+    url: "https://portal.dubaicares.ae"
+    expected_status: 200
+    check_ssl: true
+
+  # Add more Dubai Cares related websites below:
+  # - name: "My Custom Site"
+  #   url: "https://example.dubaicares.ae"
+  #   expected_status: 200
+  #   check_ssl: true
+
+notifications:
+  email:
+    enabled: true
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    use_tls: true
+    from_address: ""          # Set via EMAIL_FROM env var
+    to_addresses:             # List of recipient emails
+      - ""                    # Set via EMAIL_TO env var
+    alert_on_down: true
+    alert_on_recovery: true
+
+  pushover:                   # Mobile push notifications (iOS & Android)
+    enabled: true
+    priority: 1               # -2=lowest, -1=low, 0=normal, 1=high, 2=emergency
+    sound: "siren"
+    alert_on_down: true
+    alert_on_recovery: true
+
+  twilio_sms:                 # SMS notifications (optional)
+    enabled: false
+    from_number: ""           # Set via TWILIO_FROM env var
+    to_numbers:               # List of phone numbers
+      - ""                    # Set via TWILIO_TO env var
+
+alerting:
+  cooldown_minutes: 60        # Min time between repeated alerts for same site
+  send_daily_summary: true
+  daily_summary_hour: 8       # 8 AM summary report
