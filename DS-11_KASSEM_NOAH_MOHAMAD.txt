@@ -1,0 +1,122 @@
+================================================================================
+           U.S. DEPARTMENT OF STATE — DS-11
+           APPLICATION FOR A U.S. PASSPORT
+           Pre-filled from passport scan — 05/10/2026
+================================================================================
+
+NOTE: DS-11 applies here because the current passport (No. 673827855) was
+issued when the applicant was UNDER AGE 16. DS-82 (mail-in renewal) cannot
+be used; a new in-person DS-11 application is required.
+
+Fields marked with <COMPLETE BY APPLICANT> are not present on the passport
+and must be filled by the applicant before submission.
+
+────────────────────────────────────────────────────────────────────────────────
+1. APPLICANT INFORMATION
+────────────────────────────────────────────────────────────────────────────────
+  Last Name / Surname       : KASSEM
+  First Name                : NOAH
+  Middle Name               : MOHAMAD
+  Date of Birth             : 01 / 22 / 2016  (January 22, 2016)
+  Sex                       : Male (M)
+  Place of Birth            : United Arab Emirates
+  Social Security Number    : <COMPLETE BY APPLICANT>
+
+────────────────────────────────────────────────────────────────────────────────
+2. PHYSICAL DESCRIPTION
+────────────────────────────────────────────────────────────────────────────────
+  Height                    : <COMPLETE BY APPLICANT>
+  Hair Color                : <COMPLETE BY APPLICANT>
+  Eye Color                 : <COMPLETE BY APPLICANT>
+
+────────────────────────────────────────────────────────────────────────────────
+3. CONTACT INFORMATION
+────────────────────────────────────────────────────────────────────────────────
+  Home / Mailing Address    : <COMPLETE BY APPLICANT>
+  City                      : <COMPLETE BY APPLICANT>
+  State                     : <COMPLETE BY APPLICANT>
+  ZIP Code                  : <COMPLETE BY APPLICANT>
+  Primary Phone             : <COMPLETE BY APPLICANT>
+  Email Address             : <COMPLETE BY APPLICANT>
+
+────────────────────────────────────────────────────────────────────────────────
+4. IN-CASE-OF-EMERGENCY CONTACT
+────────────────────────────────────────────────────────────────────────────────
+  Contact Full Name         : <COMPLETE BY APPLICANT>
+  Relationship              : <COMPLETE BY APPLICANT>
+  Phone                     : <COMPLETE BY APPLICANT>
+
+────────────────────────────────────────────────────────────────────────────────
+5. MOST RECENTLY ISSUED U.S. PASSPORT
+────────────────────────────────────────────────────────────────────────────────
+  Passport Number           : 673827855
+  Issue Date                : 05 / 24 / 2021
+  Expiration Date           : 05 / 23 / 2026  ← expires in ~13 days!
+  Issuing Authority         : United States Department of State
+
+  *** The original passport must be submitted with this application. ***
+
+────────────────────────────────────────────────────────────────────────────────
+6. TRAVEL PLANS (if known)
+────────────────────────────────────────────────────────────────────────────────
+  Departure Date            : <COMPLETE BY APPLICANT>
+  Destination Country/ies   : <COMPLETE BY APPLICANT>
+
+────────────────────────────────────────────────────────────────────────────────
+7. PASSPORT TYPE REQUESTED
+────────────────────────────────────────────────────────────────────────────────
+  [X] Passport Book
+  [ ] Passport Card
+
+────────────────────────────────────────────────────────────────────────────────
+8. PARENTAL / GUARDIAN CONSENT  (REQUIRED — applicant is under age 16)
+────────────────────────────────────────────────────────────────────────────────
+  Both parents must appear in person OR one parent appears + DS-3053 from
+  the absent parent (notarized). Evidence of sole custody required if only
+  one parent has legal authority.
+
+  Parent / Guardian 1 Name  : <COMPLETE BY PARENT>
+  Relationship              : <COMPLETE BY PARENT>
+  Signature                 : [SIGN IN PERSON BEFORE ACCEPTANCE AGENT]
+
+  Parent / Guardian 2 Name  : <COMPLETE BY PARENT>
+  Relationship              : <COMPLETE BY PARENT>
+  Signature                 : [SIGN IN PERSON BEFORE ACCEPTANCE AGENT]
+
+────────────────────────────────────────────────────────────────────────────────
+9. APPLICANT / PARENT SIGNATURE AND DATE
+────────────────────────────────────────────────────────────────────────────────
+  ** DO NOT SIGN UNTIL INSTRUCTED BY THE ACCEPTANCE AGENT **
+
+  Signature                 : ___________________________
+  Date of Application       : 05 / 10 / 2026
+
+────────────────────────────────────────────────────────────────────────────────
+10. FEES (verify current amounts at travel.state.gov)
+────────────────────────────────────────────────────────────────────────────────
+  Passport Book (minor)     : $135.00  (paid to Dept. of State)
+  Execution Fee             : $ 35.00  (paid to acceptance facility)
+  Passport Card (optional)  : $ 15.00
+  Expedite (optional)       : $ 60.00  (additional, faster processing)
+  Return shipping (optional): $ 19.53
+
+────────────────────────────────────────────────────────────────────────────────
+REFERENCE — Machine-Readable Zone from current passport
+────────────────────────────────────────────────────────────────────────────────
+  P<USAKASSEM<<NOAH<MOHAMAD<<<<<<<<<<<<<<<<<<<<<
+  6738278551USA1601220M2605236718725846<406404
+
+  Decoded:
+    Document type : P (Passport)
+    Country code  : USA
+    Surname       : KASSEM
+    Given names   : NOAH MOHAMAD
+    Passport No.  : 673827855   (check digit: 1)
+    Nationality   : USA
+    Date of birth : 16-01-22  → January 22, 2016
+    Sex           : M
+    Expiry        : 26-05-23  → May 23, 2026
+
+================================================================================
+End of DS-11 Pre-fill — KASSEM, NOAH MOHAMAD
+================================================================================
