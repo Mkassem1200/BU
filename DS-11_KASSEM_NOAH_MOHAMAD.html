@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DS-11 – U.S. Passport Application – KASSEM, NOAH MOHAMAD</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #111;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  .page {
+    background: #fff;
+    width: 750px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    border: 1px solid #999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  /* ── Header ── */
+  .top-bar { background: #cc0000; height: 10px; }
+  .header {
+    background: #00008b;
+    color: #fff;
+    padding: 10px 20px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-left h1 { font-size: 16px; letter-spacing: 1px; }
+  .header-left h2 { font-size: 12px; font-weight: normal; margin-top: 2px; }
+  .header-right { font-size: 10px; text-align: right; }
+  .seal { font-size: 32px; margin-left: 10px; }
+
+  /* ── Body ── */
+  .body { padding: 15px 20px; }
+
+  /* ── Notice box ── */
+  .notice {
+    background: #fff3cd;
+    border: 1px solid #cc0000;
+    border-left: 4px solid #cc0000;
+    padding: 8px 10px;
+    margin-bottom: 14px;
+    color: #7a0000;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .notice strong { color: #cc0000; }
+
+  /* ── Sections ── */
+  .section { margin-bottom: 14px; }
+  .section-title {
+    background: #ccd8ec;
+    color: #00008b;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    border-left: 4px solid #00008b;
+  }
+
+  /* ── Fields ── */
+  .field-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 7px;
+  }
+  .field-label {
+    font-size: 9px;
+    color: #555;
+    font-style: italic;
+    min-width: 200px;
+    padding-right: 6px;
+    flex-shrink: 0;
+  }
+  .field-value {
+    background: #fffff0;
+    border: 1px solid #999;
+    padding: 3px 8px;
+    font-weight: bold;
+    font-size: 11px;
+    color: #000080;
+    flex: 1;
+    min-height: 22px;
+  }
+  .field-value.blank { color: #aaa; font-weight: normal; font-style: italic; }
+  .field-note {
+    font-size: 9px;
+    color: #cc0000;
+    font-style: italic;
+    margin-left: 6px;
+  }
+
+  /* ── Two-column row ── */
+  .two-col { display: flex; gap: 15px; margin-bottom: 7px; }
+  .two-col .field-row { flex: 1; margin-bottom: 0; }
+
+  /* ── Checkbox ── */
+  .checkbox-row { display: flex; align-items: center; margin-bottom: 5px; }
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid #555;
+    background: #fffff0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    color: #00008b;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  .checkbox-label { font-size: 11px; }
+
+  /* ── Fee table ── */
+  table.fees {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+  }
+  table.fees th {
+    background: #00008b;
+    color: #fff;
+    padding: 4px 8px;
+    text-align: left;
+  }
+  table.fees td { padding: 4px 8px; border-bottom: 1px solid #ddd; }
+  table.fees tr:nth-child(even) td { background: #f0f4ff; }
+
+  /* ── Signature line ── */
+  .sig-area {
+    border-bottom: 1px solid #333;
+    min-height: 30px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2px;
+    color: #cc0000;
+    font-style: italic;
+    font-size: 10px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    font-size: 9px;
+    color: #777;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; border: none; width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top-bar"></div>
+  <div class="header">
+    <div class="header-left">
+      <h1>U.S. DEPARTMENT OF STATE</h1>
+      <h2>DS-11 &nbsp;|&nbsp; Application for a U.S. Passport</h2>
+    </div>
+    <div style="display:flex;align-items:center">
+      <div class="header-right">
+        OMB CONTROL No. 1405-0004<br>
+        EXPIRATION DATE: 10-31-2026<br>
+        ESTIMATED BURDEN: 85 MIN.
+      </div>
+      <div class="seal">🦅</div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <div class="notice">
+      <strong>IMPORTANT:</strong> DS-11 is for first-time applicants and those whose most-recent passport
+      was issued before age 16, was lost/stolen, or is damaged. Fields showing
+      <em>"— complete by applicant —"</em> could not be determined from the passport scan alone
+      and must be filled in by the applicant before submission. <strong>Do NOT sign until
+      instructed by the Passport Acceptance Agent.</strong>
+    </div>
+
+    <!-- ══ 1. APPLICANT INFORMATION ══════════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">1. &nbsp;APPLICANT INFORMATION</div>
+
+      <div class="field-row">
+        <div class="field-label">Last Name / Surname:</div>
+        <div class="field-value">KASSEM</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">First Name:</div>
+        <div class="field-value">NOAH</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Middle Name:</div>
+        <div class="field-value">MOHAMAD</div>
+      </div>
+
+      <div class="two-col">
+        <div class="field-row">
+          <div class="field-label" style="min-width:160px">Date of Birth (MM/DD/YYYY):</div>
+          <div class="field-value">01 / 22 / 2016</div>
+        </div>
+        <div class="field-row">
+          <div class="field-label" style="min-width:40px">Sex:</div>
+          <div class="field-value">Male (M)</div>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field-label">Place of Birth (City &amp; Country):</div>
+        <div class="field-value">United Arab Emirates</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Social Security Number:</div>
+        <div class="field-value blank">___ – __ – ____&nbsp;</div>
+        <div class="field-note">⚠ Required — not available on passport; applicant must provide</div>
+      </div>
+    </div>
+
+    <!-- ══ 2. PHYSICAL DESCRIPTION ══════════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">2. &nbsp;PHYSICAL DESCRIPTION</div>
+      <div class="two-col">
+        <div class="field-row">
+          <div class="field-label" style="min-width:130px">Height (ft &amp; in):</div>
+          <div class="field-value blank">__ ft &nbsp; __ in</div>
+        </div>
+        <div class="field-row">
+          <div class="field-label" style="min-width:80px">Hair Color:</div>
+          <div class="field-value blank">— complete by applicant —</div>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Eye Color:</div>
+        <div class="field-value blank">— complete by applicant —</div>
+      </div>
+    </div>
+
+    <!-- ══ 3. CONTACT INFORMATION ════════════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">3. &nbsp;CONTACT INFORMATION</div>
+      <div class="field-row">
+        <div class="field-label">Home / Mailing Address:</div>
+        <div class="field-value blank">— complete by applicant —</div>
+      </div>
+      <div class="two-col">
+        <div class="field-row">
+          <div class="field-label" style="min-width:40px">City:</div>
+          <div class="field-value blank">— complete —</div>
+        </div>
+        <div class="field-row">
+          <div class="field-label" style="min-width:40px">State:</div>
+          <div class="field-value blank">__</div>
+        </div>
+        <div class="field-row">
+          <div class="field-label" style="min-width:50px">ZIP:</div>
+          <div class="field-value blank">_____</div>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Primary Phone:</div>
+        <div class="field-value blank">(____)___-____</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Email Address:</div>
+        <div class="field-value blank">— complete by applicant —</div>
+      </div>
+    </div>
+
+    <!-- ══ 4. EMERGENCY CONTACT ══════════════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">4. &nbsp;IN-CASE-OF-EMERGENCY CONTACT</div>
+      <div class="field-row">
+        <div class="field-label">Contact Full Name:</div>
+        <div class="field-value blank">— complete by applicant —</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Relationship to Applicant:</div>
+        <div class="field-value blank">— complete by applicant —</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Phone:</div>
+        <div class="field-value blank">(____)___-____</div>
+      </div>
+    </div>
+
+    <!-- ══ 5. MOST RECENTLY ISSUED PASSPORT ════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">5. &nbsp;MOST RECENTLY ISSUED U.S. PASSPORT / PASSPORT CARD</div>
+      <div class="field-row">
+        <div class="field-label">Passport Number:</div>
+        <div class="field-value">673827855</div>
+      </div>
+      <div class="two-col">
+        <div class="field-row">
+          <div class="field-label" style="min-width:160px">Issue Date (MM/DD/YYYY):</div>
+          <div class="field-value">05 / 24 / 2021</div>
+        </div>
+        <div class="field-row">
+          <div class="field-label" style="min-width:100px">Expiration Date:</div>
+          <div class="field-value">05 / 23 / 2026</div>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Issuing Authority:</div>
+        <div class="field-value">United States Department of State</div>
+      </div>
+
+      <div class="notice" style="margin-top:8px">
+        <strong>Note:</strong> Passport No. 673827855 expires 05/23/2026.
+        The passport must be submitted with this application.
+        Since the passport was issued when the applicant was under age 16, DS-11 (not DS-82) is required.
+      </div>
+    </div>
+
+    <!-- ══ 6. TRAVEL PLANS ═══════════════════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">6. &nbsp;TRAVEL PLANS (complete if known)</div>
+      <div class="field-row">
+        <div class="field-label">Departure Date:</div>
+        <div class="field-value blank">__ / __ / ____</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Destination Country / Countries:</div>
+        <div class="field-value blank">— complete by applicant —</div>
+      </div>
+    </div>
+
+    <!-- ══ 7. PASSPORT TYPE REQUESTED ════════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">7. &nbsp;PASSPORT TYPE REQUESTED</div>
+      <div class="checkbox-row">
+        <div class="checkbox">✓</div>
+        <div class="checkbox-label">Passport Book &nbsp;(standard 28-page or large 52-page)</div>
+      </div>
+      <div class="checkbox-row">
+        <div class="checkbox">&nbsp;</div>
+        <div class="checkbox-label">Passport Card &nbsp;(limited to land/sea travel to Canada, Mexico, Caribbean, Bermuda)</div>
+      </div>
+    </div>
+
+    <!-- ══ 8. PARENTAL / GUARDIAN CONSENT ════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">8. &nbsp;PARENTAL / GUARDIAN CONSENT
+        &nbsp;<span style="color:#cc0000;font-weight:normal">(REQUIRED — applicant NOAH MOHAMAD KASSEM is under age 16 as of 05/10/2026)</span>
+      </div>
+      <div class="notice">
+        Both parents / guardians must appear in person at the acceptance facility, <strong>OR</strong>
+        one parent must appear with a completed, notarized DS-3053 (Statement of Consent) from the
+        absent parent. If only one parent has legal custody, provide documentary evidence
+        (court order, death certificate, etc.).
+      </div>
+
+      <div style="margin-top:10px">
+        <div class="field-row">
+          <div class="field-label">Parent / Guardian 1 — Full Name:</div>
+          <div class="field-value blank">— complete by parent —</div>
+        </div>
+        <div class="field-row">
+          <div class="field-label">Relationship:</div>
+          <div class="field-value blank">— complete —</div>
+        </div>
+        <div style="margin-bottom:12px">
+          <div class="field-label" style="margin-bottom:4px">Parent / Guardian 1 Signature:</div>
+          <div class="sig-area">Sign in person before Passport Acceptance Agent</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-label">Parent / Guardian 2 — Full Name:</div>
+          <div class="field-value blank">— complete by parent —</div>
+        </div>
+        <div class="field-row">
+          <div class="field-label">Relationship:</div>
+          <div class="field-value blank">— complete —</div>
+        </div>
+        <div style="margin-bottom:4px">
+          <div class="field-label" style="margin-bottom:4px">Parent / Guardian 2 Signature:</div>
+          <div class="sig-area">Sign in person before Passport Acceptance Agent</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 9. APPLICANT / PARENT SIGNATURE ════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">9. &nbsp;APPLICANT / PARENT SIGNATURE AND DATE</div>
+      <div class="notice">
+        <strong>DO NOT SIGN</strong> until instructed by the Passport Acceptance Agent.
+        Signing before the agent voids this application.
+      </div>
+      <div style="margin-top:10px">
+        <div class="field-label" style="margin-bottom:4px">Signature (applicant if 16+, or parent/guardian):</div>
+        <div class="sig-area">X ____________________________________________________</div>
+        <div class="field-row" style="margin-top:8px">
+          <div class="field-label">Date of Application:</div>
+          <div class="field-value">05 / 10 / 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 10. FEES ═══════════════════════════════════════════════════════════ -->
+    <div class="section">
+      <div class="section-title">10. &nbsp;FEES (verify current amounts at travel.state.gov)</div>
+      <table class="fees">
+        <tr>
+          <th>Item</th>
+          <th>Fee</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>Passport Book application fee (minor under 16)</td>
+          <td>$135.00</td>
+          <td>Paid to U.S. Department of State</td>
+        </tr>
+        <tr>
+          <td>Execution fee</td>
+          <td>$35.00</td>
+          <td>Paid to acceptance facility</td>
+        </tr>
+        <tr>
+          <td>Passport Card (optional)</td>
+          <td>$15.00</td>
+          <td>Minor rate</td>
+        </tr>
+        <tr>
+          <td>Expedite fee (optional)</td>
+          <td>$60.00</td>
+          <td>Faster processing — add to application fee</td>
+        </tr>
+        <tr>
+          <td>1–2 day delivery (optional)</td>
+          <td>$19.53</td>
+          <td>Return shipping</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ══ MACHINE-READABLE ZONE (from passport) ═══════════════════════════ -->
+    <div class="section">
+      <div class="section-title">REFERENCE — Machine-Readable Zone (from current passport)</div>
+      <div style="font-family:monospace;font-size:11px;background:#111;color:#0f0;padding:10px 14px;letter-spacing:2px;line-height:1.8;border-radius:4px">
+        P&lt;USAKASSEM&lt;&lt;NOAH&lt;MOHAMAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>
+        6738278551USA1601220M2605236718725846&lt;406404
+      </div>
+      <div style="font-size:9px;color:#555;margin-top:4px">
+        Decoded: Type=P | Country=USA | Surname=KASSEM | Given=NOAH MOHAMAD |
+        Passport No=673827855 | Nationality=USA | DOB=16-01-22 | Sex=M | Expiry=26-05-23
+      </div>
+    </div>
+
+    <div class="footer">
+      DS-11 &nbsp;|&nbsp; Revision 10-2023 &nbsp;|&nbsp;
+      Pre-filled from passport scan for KASSEM, NOAH MOHAMAD (DOB: 01/22/2016) &nbsp;|&nbsp;
+      Generated: 05/10/2026 &nbsp;|&nbsp;
+      Fields left blank must be completed by the applicant in person.
+    </div>
+
+  </div><!-- /body -->
+</div><!-- /page -->
+</body>
+</html>
