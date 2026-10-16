@@ -17,4 +17,8 @@ Shared instructions for Claude Code and Codex in this workspace.
 - Call conventions: the assistant introduces itself as **Ashley** (voice id
   `b90310fb-3f1f-4c0b-a6ff-1a1a457d2da3`), never claims to be human, recording OFF (UAE consent law),
   leave a short voicemail if unanswered, and always show MK the full transcript afterwards.
+- Lesson (2026-10-16): Bland's voicemail detection marked a live person (kids talking over each other)
+  as voicemail, played the voicemail message twice and hung up. For family calls, leave out the
+  `voicemail` block so the agent always talks to whoever answers, and put the request in the first sentence.
+- Personal phone numbers stay in Drive CONTACTS.md, never in this repo.
 - MK's time zone: Asia/Dubai (GST, UTC+4).
